@@ -1,0 +1,42 @@
+<h3>{{viewTitle}}</h3>
+<h2>Select</h2>
+
+<style>
+        body,html {
+          height :100%;
+        }
+        .bg-img {
+          background-image: url("backgroundx.jpg");
+          height:100%;
+          width:100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: fixed;
+        }
+        .container #buttonx {
+          position:absolute;
+          width: 80%;
+          max-width: 200px;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          font-size: 16px;
+          border:aliceblue;
+          cursor: pointer;
+        }
+        nav {
+          height: 40px;
+          line-height: 40px;
+        }
+      </style>
+
+<form action="/employee/" method="POST" autocomplete="off">
+<div class="row center">
+    <div class="col s12 m4">
+        <a href="/employee/login" id="buttonx" class="btn-large waves-effect waves-light teal lighten-1 pulse">Startup</a>
+    </div>
+    <div class="col s12 m4">
+        <a href="/user/login" id="buttonx" class="btn-large waves-effect waves-light teal lighten-1 pulse">Shareholder</a>
+    </div>
+</div>
+</form>
